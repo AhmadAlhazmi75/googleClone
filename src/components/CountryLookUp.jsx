@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 
 const CountryLookup = () => {
-  const [country, setCountry] = useState("");
+  const [country, setCountry] = useState("Saudi Arabia");
   useEffect(() => {
     const getIP = async () => {
       const ip = await fetch("https://api.ipify.org?format=json")
