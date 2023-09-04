@@ -8,7 +8,7 @@ function SearchHeaderOptions() {
   const pathname = usePathname();
   function selectTab(tab) {
     router.push(
-      `/search/${tab === "image" ? "image" : "web"}/?searchTerm=${params.get(
+      `/search/${tab === "Images" ? "image" : "web"}/?searchTerm=${params.get(
         "searchTerm"
       )}`
     );
