@@ -1,4 +1,5 @@
 "use client";
+
 import { AiOutlineCamera, AiOutlineSearch } from "react-icons/ai";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 // import { useRouter } from "next/router";
