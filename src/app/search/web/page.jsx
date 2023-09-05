@@ -5,8 +5,7 @@ async function WebSearchPage({ searchParams }) {
   const startIndex = searchParams.start || "1";
   await new Promise((resolve) => setTimeout(resolve, 2000));
   const res = await fetch(
-    `https://www.googleapis.com/customsearch/v1?key=AIzaSyCS0WTTUi0H4Kzn_dnPkr1UJX9TITDsvjA&cx=8431191e24439478b
-    &q=${searchParams.searchTerm}&start=${startIndex}`
+    `https://www.googleapis.com/customsearch/v1?key=${process.env.API_KEY}&cx=${process.env.CONTEXT_KEY}&q=${searchParams.searchTerm}&start=${startIndex}`
   );
 
   if (!res.ok) {
