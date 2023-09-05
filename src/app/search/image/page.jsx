@@ -30,4 +30,4 @@ async function ImageSearchPage({ searchParams }) {
   return <>{results && <ImageSearchResults results={data} />}</>;
 }
 
-export default WebSearchPage;
+export default ImageSearchPage;
